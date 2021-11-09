@@ -170,10 +170,10 @@ sudo systemctl status isc-dhcp-relay
 <!-- Demonstration -->
 ### Part-IV
 
-1. Demonstrate the DHCP operating with a client and a server in the same
+- Demonstrate the DHCP operating with a client and a server in the same
 network.
 
-2. Demonstrate the DHCP operating with a client and a server in different
+- Demonstrate the DHCP operating with a client and a server in different
 networks.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
