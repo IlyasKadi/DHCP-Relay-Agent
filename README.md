@@ -68,10 +68,12 @@ subnet 192.168.2.0 netmask 255.255.255.0
         option routers 192.168.2.1;
         interface eth0;
 }
-
 ```
 
-/etc/network/interfaces
+```sh
+sudo nano /etc/network/interfaces
+```
+
 ```sh
 auto lo
 iface lo inet loopback
@@ -87,7 +89,6 @@ allow-hotplug eth1
 iface eth1 inet static
         address 192.168.1.1
         gateway 192.168.1.1
-
 ```
 
 Then the DHCP server has to be started.
@@ -112,8 +113,9 @@ L'installation du paquet sur le relais:
 ```sh
 apt install isc-dhcp-relay
 ```
-
-/etc/default/isc-dhcp-relay
+```sh
+sudo nano /etc/default/isc-dhcp-relay
+```
 
 ```sh
 # What servers should the DHCP relay forward requests to?
@@ -125,7 +127,11 @@ INTERFACES="eth0 eth1"
 # Additional options that are passed to the DHCP relay daemon?
 OPTIONS=""
 ```
-/etc/network/interfaces
+
+```sh
+sudo nano /etc/network/interfaces
+```
+
 ```sh
 auto lo
 iface lo inet loopback
