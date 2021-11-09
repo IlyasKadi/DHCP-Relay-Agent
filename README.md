@@ -61,7 +61,7 @@ a
 
 
 <!-- Inhertance diagram -->
-## Part-III
+### Part-III
 
 a
 a
@@ -80,7 +80,7 @@ a
 
 
 <!-- Image -->
-## Part-IV
+### Part-IV
 
 a
 a
