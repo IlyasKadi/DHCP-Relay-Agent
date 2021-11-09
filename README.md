@@ -152,6 +152,15 @@ iface eth0 inet static
         netmask 255.255.255.0
 
 ```
+
+firewall_disabled.
+```sh
+sudo nano /etc/selinux/config
+```
+<p align="center">
+     <img src="images/firewall_disabled.png">
+   </p>
+
 Then the DHCP relay has to be started.
 ```sh
 sudo systemctl start isc-dhcp-relay
@@ -162,6 +171,7 @@ If the start of the ISC DHCP relay was aborted with an error, then you should pe
 ```sh
 sudo systemctl status isc-dhcp-relay
 ```
+
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
