@@ -26,24 +26,6 @@
 
 
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-<!-- GETTING STARTED -->
-### Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-1. [**How to install Qt**](https://anassbelcaid.github.io/CS221/qtcreator/)
-2. **Clone the repo**
-   ```sh
-   git clone https://github.com/IlyasKadi/Widgets_and_Layouts.git
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- Understanding the HSL Color Space -->
 ### Experimenting-with-QHBOXLayout
 
 Create a project called `hbox` with the following code:
