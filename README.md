@@ -59,7 +59,6 @@ subnet 192.168.1.0 netmask 255.255.255.0
         range 192.168.1.50 192.168.1.80;
         option routers 192.168.1.1;
         interface eth1;
-
 }
 
 subnet 192.168.2.0 netmask 255.255.255.0
@@ -67,7 +66,6 @@ subnet 192.168.2.0 netmask 255.255.255.0
         range 192.168.2.50 192.168.2.80;
         option routers 192.168.2.1;
         interface eth0;
-
 }
 
 ```
@@ -132,7 +130,26 @@ INTERFACES="eth0 eth1"
 # Additional options that are passed to the DHCP relay daemon?
 OPTIONS=""
 ```
+/etc/network/interfaces
+```sh
+auto lo
+iface lo inet loopback
 
+allow-hotplug eth1
+iface eth1 inet static
+        address 10.1.1.2
+        gateway 10.1.1.2
+        network 10.1.1.0
+        netmask 255.255.255.0
+
+allow-hotplug eth0
+iface eth0 inet static
+        address 192.168.2.1
+        gateway 192.168.2.1
+        network 192.168.2.0
+        netmask 255.255.255.0
+
+```
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
