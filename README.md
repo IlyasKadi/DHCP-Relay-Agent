@@ -44,17 +44,7 @@ a
 <!-- The PNG class -->
 ### Part-II
 
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…). ... L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -63,17 +53,7 @@ a
 <!-- Inhertance diagram -->
 ### Part-III
 
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
+Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…). ... L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -82,18 +62,7 @@ a
 <!-- Image -->
 ### Part-IV
 
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-a
-
+Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…). ... L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
