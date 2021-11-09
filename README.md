@@ -89,6 +89,13 @@ iface eth1 inet static
         address 192.168.1.1
         gateway 192.168.1.1
 ```
+firewall_disabled.
+```sh
+sudo nano /etc/selinux/config
+```
+<p align="center">
+     <img src="images/firewall_disabled.png">
+   </p>
 
 Then the DHCP server has to be started.
 ```sh
