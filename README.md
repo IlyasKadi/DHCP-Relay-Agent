@@ -31,9 +31,8 @@ First we install the DHCP server.
 ```sh
 sudo apt-get install isc-dhcp-server
 ```
-<p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- The PNG class -->
+<!-- DHCP configuration -->
 ### Part-II
 
 First we have to define for which network interface the ISC DHCP server should work. To do this, we open the following configuration file.
@@ -106,17 +105,19 @@ In case of error, the messages are unfortunately not always clear. Unless you ha
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-<!-- Inhertance diagram -->
+<!-- Relay agent configuration -->
 ### Part-III
 
-L'installation du paquet sur le relais:
+**Setup ISC DHCP RELAY**
+First we install the DHCP relay agent.
 ```sh
 apt install isc-dhcp-relay
 ```
+First we have to define for which network interface the ISC DHCP server should work. To do this, we open the following configuration file.
 ```sh
 sudo nano /etc/default/isc-dhcp-relay
 ```
-
+Here we add the ADDRESS of dhcp and interfaces names.
 ```sh
 # What servers should the DHCP relay forward requests to?
 SERVERS="10.1.1.1"
@@ -156,7 +157,7 @@ iface eth0 inet static
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-<!-- Image -->
+<!-- Demonstration -->
 ### Part-IV
 
 Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…). ... L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.
