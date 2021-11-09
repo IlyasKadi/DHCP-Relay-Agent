@@ -174,10 +174,11 @@ Un texte est une série orale ou écrite de mots perçus comme constituant un en
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-Our Team - [AIT EL KADI Ilyas](https://github.com/IlyasKadi) - [AZIZ Oussama](https://github.com/ATAMAN0)
+Our Team - [AIT EL KADI Ilyas](https://github.com/IlyasKadi) - [AZIZ Oussama](https://github.com/ATAMAN0) 
+- [DARBAL nour-elhouda](https://) -[OULARBI Khaoula](https://)
 
-Project Link: [Widgets_and_Layouts](https://github.com/IlyasKadi/Widgets_and_Layouts)
+Project Link: [DHCP-Relay-Agent](https://github.com/IlyasKadi/DHCP-Relay-Agent)
 
-Encadré par : [Mr.BELCAID-Anass](https://anassbelcaid.github.io)
+Encadré par : [Mme.TADIST Khawla](https://)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
