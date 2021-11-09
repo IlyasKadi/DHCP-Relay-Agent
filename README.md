@@ -28,7 +28,7 @@
 
 **Setup ISC DHCP server**
 First we install the DHCP server.
-```cpp
+```color
 sudo apt-get install isc-dhcp-server
 ```
 <p align="right">(<a href="#top">back to top</a>)</p>
