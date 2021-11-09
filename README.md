@@ -123,13 +123,13 @@ apt install isc-dhcp-relay
 /etc/default/isc-dhcp-relay
 
 ```sh
-> What servers should the DHCP relay forward requests to?
+# What servers should the DHCP relay forward requests to?
 SERVERS="10.1.1.1"
 
-> On what interfaces should the DHCP relay (dhrelay) serve DHCP requests?
+# On what interfaces should the DHCP relay (dhrelay) serve DHCP requests?
 INTERFACES="eth0 eth1"
 
-> Additional options that are passed to the DHCP relay daemon?
+# Additional options that are passed to the DHCP relay daemon?
 OPTIONS=""
 ```
 
