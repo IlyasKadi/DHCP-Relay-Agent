@@ -79,7 +79,7 @@ In case of error, the messages are unfortunately not always clear. Unless you ha
 
 
 <!-- Inhertance diagram -->
-### Part-III
+### Part-III : DHCP Relay agent configuration
 
 Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…). ... L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.
 
