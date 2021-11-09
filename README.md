@@ -160,7 +160,7 @@ If the command prompt returns without a message, then it worked.
 
 If the start of the ISC DHCP relay was aborted with an error, then you should perform a status query to get to the bottom of the error.
 ```sh
-sudo systemctl status isc-dhcp-server
+sudo systemctl status isc-dhcp-relay
 ```
 
 
