@@ -36,8 +36,32 @@ sudo apt-get install isc-dhcp-server
 <!-- The PNG class -->
 ### Part-II
 
-Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…). ... L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.
-
+First we have to define for which network interface the ISC DHCP server should work. To do this, we open the following configuration file.
+```sh
+sudo nano /etc/default/isc-dhcp-server
+```
+Here we add the interface name in the line provided. Here we choose “wlan0” as an example for a WLAN router. Depending on the application, it can also be “eth0”.
+```sh
+INTERFACES = "wlan0"
+```
+It continues with the configuration. Before we save the default configuration file and create a new one.
+```sh
+sudo mv /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf_old
+sudo nano /etc/dhcp/dhcpd.conf
+```
+Then the editor opens with an empty file, in which we enter the following configuration.
+```sh
+authoritative;
+default-lease-time 86400;
+max-lease-time 86400;
+ 
+subnet 192.168.1.0 netmask 255.255.255.0 {
+  range 192.168.1.100 192.168.1.150;
+  option routers 192.168.1.1;
+  option domain-name-servers 192.168.1.1;
+  option domain-name "local";
+}
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
