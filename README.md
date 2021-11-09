@@ -15,12 +15,10 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
         <li><a href="#Experimenting-with-QHBOXLayout">Experimenting with QHBOXLayout</a></li>
         <li><a href="#Nested-Layouts">Nested Layouts</a></li>
         <li><a href="#Bug-report-Form">Bug report Form</a></li>
         <li><a href="#Grid-Layout">Grid Layout</a></li>
-    </li>
   </ol>
 </details>
 
