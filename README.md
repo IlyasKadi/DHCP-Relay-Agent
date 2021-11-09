@@ -40,9 +40,10 @@ First we have to define for which network interface the ISC DHCP server should w
 ```sh
 sudo nano /etc/default/isc-dhcp-server
 ```
-Here we add the interface name in the line provided. Here we choose “wlan0” as an example for a WLAN router. Depending on the application, it can also be “eth0”.
+Here we add the interface name in the line provided. Here we choose “eth1”. Depending on the application, it can also be “wlan0”.
 ```sh
-INTERFACES = "wlan0"
+INTERFACESv4="eth1"
+INTERFACESv6=""
 ```
 It continues with the configuration. Before we save the default configuration file and create a new one.
 ```sh
@@ -68,12 +69,6 @@ subnet 192.168.2.0 netmask 255.255.255.0
         interface eth0;
 }
 
-```
-
-/etc/default/isc-dhcp-server
-```sh
-INTERFACESv4="eth1"
-INTERFACESv6=""
 ```
 
 /etc/network/interfaces
