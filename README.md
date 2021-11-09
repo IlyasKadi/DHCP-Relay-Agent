@@ -63,6 +63,18 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 }
 ```
 
+Then the DHCP server has to be started.
+```sh
+sudo systemctl start isc-dhcp-server
+```
+If the command prompt returns without a message, then it worked.
+
+If the start of the ISC DHCP server was aborted with an error, then you should perform a status query to get to the bottom of the error.
+```sh
+sudo systemctl status isc-dhcp-server
+```
+In case of error, the messages are unfortunately not always clear. Unless you have made a configuration error. Very popular are typos or missing semicolons (“;”) at the end of a directive.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
