@@ -5,8 +5,8 @@
 <br />
 <div align="center">
     <img src="images/logo.png" alt="Logo" width="550" height="380">
-  <h2 align="center">Programming Widget Layout</h2>
-  <h3 align="center">Use the gained knowledge to create forms</h3>
+  <h2 align="center">Project 1</h2>
+  <h3 align="center">Dynamic Host Configuration Protocol</h3>
 </div>
 
 
