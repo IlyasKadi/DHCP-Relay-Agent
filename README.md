@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="images/logo.png" alt="Logo" width="450" height="380">
+    <img src="images/logo.png" alt="Logo" width="500" height="380">
   <h2 align="center">Project 1</h2>
   <h3 align="center">Dynamic Host Configuration Protocol</h3>
 </div>
@@ -173,12 +173,21 @@ sudo systemctl status isc-dhcp-relay
 - Demonstrate the DHCP operating with a client and a server in the same
 network.
 
+Client1      | DHCP         | Routing      |
+------------ | -------------| -------------|
+![Image client1](images/ipconfig_client1.png) | ![Image routing_dhcp](images/dhcp_config.png)| ![Image routing_dhcp](images/routing_dhcp.png)|
+
 - Demonstrate the DHCP operating with a client and a server in different
 networks.
 
+Client2      | DHCP         | Routing      |
+------------ | -------------| -------------|
+![Image client2](images/ipconfig_client2.png) | ![Image routing_dhcp](images/relay_config.png)| ![Image routing_dhcp](images/relay_routing.png)|
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-Our Team - [AIT EL KADI Ilyas](https://github.com/IlyasKadi) - [AZIZ Oussama](https://github.com/ATAMAN0) - [DARBAL nour-elhouda](https://) -[OULARBI Khaoula](https://)
+Our Team - [AIT EL KADI Ilyas](https://github.com/IlyasKadi) - [AZIZ Oussama](https://github.com/ATAMAN0) - [DARBAL nour-elhouda](https://) -[MZOUDI Khaoula](https://)
 
 Project Link: [DHCP-Relay-Agent](https://github.com/IlyasKadi/DHCP-Relay-Agent)
 
