@@ -26,8 +26,11 @@
 
 ### Part-I
 
-Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…). ... L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.
-
+**Setup ISC DHCP server**
+First we install the DHCP server.
+```sh
+sudo apt-get install isc-dhcp-server
+```
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- The PNG class -->
