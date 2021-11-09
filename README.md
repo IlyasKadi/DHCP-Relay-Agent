@@ -81,8 +81,10 @@ In case of error, the messages are unfortunately not always clear. Unless you ha
 <!-- Inhertance diagram -->
 ### Part-III
 
-Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…). ... L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.
-
+L'installation du paquet sur le relais:
+```sh
+apt install isc-dhcp-relay
+```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
