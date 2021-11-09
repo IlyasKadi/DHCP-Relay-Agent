@@ -206,14 +206,14 @@ sudo systemctl status isc-dhcp-relay
 - Demonstrate the DHCP operating with a client and a server in the same
 network.
 
-Client1      | DHCP         | Routing      |
+Client1      | DHCP_config         | Routing      |
 ------------ | -------------| -------------|
 ![Image client1](images/ipconfig_client1.png) | ![Image routing_dhcp](images/dhcp_config.png)| ![Image routing_dhcp](images/routing_dhcp.png)|
 
 - Demonstrate the DHCP operating with a client and a server in different
 networks.
 
-Client2      | DHCP         | Routing      |
+Client2      | RELAY_config         | Routing      |
 ------------ | -------------| -------------|
 ![Image client2](images/ipconfig_client2.png) | ![Image routing_dhcp](images/relay_config.png)| ![Image routing_dhcp](images/relay_routing.png)|
 
