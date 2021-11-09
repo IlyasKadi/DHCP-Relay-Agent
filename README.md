@@ -181,7 +181,7 @@ Routing.
 sudo nano route -n
 ```
 <p align="center">
-     <img src="images/relay_dhcp.png">
+     <img src="images/relay_routing.png">
    </p>     
 
 Then the DHCP relay has to be started.
