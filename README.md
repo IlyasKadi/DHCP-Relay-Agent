@@ -17,7 +17,7 @@
   <ol>
         <li><a href="#Part-I">Part I</a></li>
         <li><a href="#Part-II">Part II : DHCP configuration</a></li>
-        <li><a href="#Part-III-:-DHCP-Relay-agent-configuration">Part III : Relay agent configuration</a></li>
+        <li><a href="#Part-III">Part III : Relay agent configuration</a></li>
         <li><a href="#Part-IV">Part IV : Demonstration</a></li>
   </ol>
 </details>
@@ -79,7 +79,7 @@ In case of error, the messages are unfortunately not always clear. Unless you ha
 
 
 <!-- Inhertance diagram -->
-### Part-III-:-DHCP-Relay-agent-configuration
+### Part-III
 
 Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…). ... L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.
 
