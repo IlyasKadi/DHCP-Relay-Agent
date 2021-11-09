@@ -17,7 +17,7 @@
   <ol>
         <li><a href="#Part-I">Part I</a></li>
         <li><a href="#Part-II">Part II : DHCP configuration</a></li>
-        <li><a href="#Part-III">Part III : Relay agent configuration</a></li>
+        <li><a href="#Part-III : DHCP Relay agent configuration">Part III : Relay agent configuration</a></li>
         <li><a href="#Part-IV">Part IV : Demonstration</a></li>
   </ol>
 </details>
