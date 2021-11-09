@@ -46,21 +46,55 @@ INTERFACES = "wlan0"
 ```
 It continues with the configuration. Before we save the default configuration file and create a new one.
 ```sh
-sudo mv /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf_old
 sudo nano /etc/dhcp/dhcpd.conf
 ```
 Then the editor opens with an empty file, in which we enter the following configuration.
 ```sh
 authoritative;
-default-lease-time 86400;
-max-lease-time 86400;
- 
-subnet 192.168.1.0 netmask 255.255.255.0 {
-  range 192.168.1.100 192.168.1.150;
-  option routers 192.168.1.1;
-  option domain-name-servers 192.168.1.1;
-  option domain-name "local";
+default-lease-time 600;
+max-lease-time 7200;
+
+subnet 192.168.1.0 netmask 255.255.255.0
+{
+        range 192.168.1.50 192.168.1.80;
+        option routers 192.168.1.1;
+        interface eth1;
+
 }
+
+subnet 192.168.2.0 netmask 255.255.255.0
+{
+        range 192.168.2.50 192.168.2.80;
+        option routers 192.168.2.1;
+        interface eth0;
+
+}
+
+```
+
+/etc/default/isc-dhcp-server
+```sh
+INTERFACESv4="eth1"
+INTERFACESv6=""
+```
+
+/etc/network/interfaces
+```sh
+auto lo
+iface lo inet loopback
+
+allow-hotplug eth0
+iface eth0 inet static
+        address 10.1.1.1
+        gateway 10.1.1.1
+        network 10.1.1.0
+        netmask 255.255.255.0
+
+allow-hotplug eth1
+iface eth1 inet static
+        address 192.168.1.1
+        gateway 192.168.1.1
+
 ```
 
 Then the DHCP server has to be started.
@@ -85,6 +119,21 @@ L'installation du paquet sur le relais:
 ```sh
 apt install isc-dhcp-relay
 ```
+
+/etc/default/isc-dhcp-relay
+
+```sh
+> What servers should the DHCP relay forward requests to?
+SERVERS="10.1.1.1"
+
+> On what interfaces should the DHCP relay (dhrelay) serve DHCP requests?
+INTERFACES="eth0 eth1"
+
+> Additional options that are passed to the DHCP relay daemon?
+OPTIONS=""
+```
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
