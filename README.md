@@ -96,6 +96,14 @@ sudo nano /etc/selinux/config
 <p align="center">
      <img src="images/firewall_disabled.png">
    </p>
+   
+ Routing.
+```sh
+sudo nano route -n
+```
+<p align="center">
+     <img src="images/routing_dhcp.png">
+   </p>  
 
 Then the DHCP server has to be started.
 ```sh
@@ -167,6 +175,14 @@ sudo nano /etc/selinux/config
 <p align="center">
      <img src="images/firewall_disabled.png">
    </p>
+   
+Routing.
+```sh
+sudo nano route -n
+```
+<p align="center">
+     <img src="images/relay_dhcp.png">
+   </p>     
 
 Then the DHCP relay has to be started.
 ```sh
