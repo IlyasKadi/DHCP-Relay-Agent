@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-    <img src="images/logo.png" alt="Logo" width="550" height="380">
+    <img src="images/logo.png" alt="Logo" width="450" height="380">
   <h2 align="center">Project 1</h2>
   <h3 align="center">Dynamic Host Configuration Protocol</h3>
 </div>
