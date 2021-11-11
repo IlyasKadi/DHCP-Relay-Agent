@@ -16,7 +16,7 @@
   <summary>Table of Contents</summary>
   <ol>
         <li><a href="#Network architecture">Network architecture</a></li>
-        <li><a href="#Part-I">Part I</a></li>
+        <li><a href="#Part-I">Part I : Installing the DHCP server</a></li>
         <li><a href="#Part-II">Part II : DHCP configuration</a></li>
         <li><a href="#Part-III">Part III : Relay agent configuration</a></li>
         <li><a href="#Part-IV">Part IV : Demonstration</a></li>
