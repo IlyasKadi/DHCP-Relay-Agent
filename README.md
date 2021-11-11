@@ -35,6 +35,12 @@ First we install the DHCP server.
 <!-- DHCP configuration -->
 # Part-II
 
+### Network architecture
+
+<p align="center">
+     <img src="images/DHCP-arch.png">
+   </p>
+   
 ## Configuring the DHCP server
 First we have to define for which network interface the ISC DHCP server should work. To do this, we open the following configuration file.
 
@@ -119,6 +125,12 @@ In case of error, the messages are unfortunately not always clear. Unless you ha
 
 <!-- Relay agent configuration -->
 # Part-III
+
+### Network architecture
+
+<p align="center">
+     <img src="images/RELAY_agent-arch.png">
+   </p>
 
 **Setup ISC DHCP RELAY**
 ### First we install the DHCP relay agent.
