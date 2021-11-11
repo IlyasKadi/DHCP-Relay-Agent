@@ -45,8 +45,7 @@ Here we add the interface name in the line provided. Here we choose “eth1”. 
 INTERFACESv4="eth1"
 INTERFACESv6=""
 ```
-It continues with the configuration. Before we save the default configuration file and create a new one.
-
+### Subnets declaration
 `sudo nano /etc/dhcp/dhcpd.conf`
 
 Then the editor opens with an empty file, in which we enter the following configuration.
@@ -88,25 +87,26 @@ iface eth1 inet static
         address 192.168.1.1
         gateway 192.168.1.1
 ```
-firewall_disabled.
+### firewall_disabled
 `sudo nano /etc/selinux/config`
 
 <p align="center">
      <img src="images/firewall_disabled.png">
    </p>
    
- Routing.
+ ### Routing
 `sudo nano route -n`
 
 <p align="center">
      <img src="images/routing_dhcp.png">
    </p>  
 
-Then the DHCP server has to be started.
+### Then the DHCP server has to be started.
 `sudo systemctl start isc-dhcp-server`
 
 If the command prompt returns without a message, then it worked.
 
+### Server status
 If the start of the ISC DHCP server was aborted with an error, then you should perform a status query to get to the bottom of the error.
 `sudo systemctl status isc-dhcp-server`
 
@@ -119,10 +119,12 @@ In case of error, the messages are unfortunately not always clear. Unless you ha
 # Part-III
 
 **Setup ISC DHCP RELAY**
-First we install the DHCP relay agent.
+### First we install the DHCP relay agent.
 `apt install isc-dhcp-relay`
 
 First we have to define for which network interface the ISC DHCP server should work. To do this, we open the following configuration file.
+
+### Configuring ther DHCP Relay
 `sudo nano /etc/default/isc-dhcp-relay`
 
 Here we add the ADDRESS of dhcp and interfaces names.
@@ -136,7 +138,7 @@ INTERFACES="eth0 eth1"
 # Additional options that are passed to the DHCP relay daemon?
 OPTIONS=""
 ```
-
+### Configuring the interfaces
 `sudo nano /etc/network/interfaces`
 
 
@@ -159,29 +161,35 @@ iface eth0 inet static
         netmask 255.255.255.0
 
 ```
+### Activating packet forwarding
+`etc/sysctl.conf`
 
-firewall_disabled.
+```sh
+net.ipv4.ip_forward=1
+```
+
+### firewall_disabled
 `sudo nano /etc/selinux/config`
 
 <p align="center">
      <img src="images/firewall_disabled.png">
    </p>
    
-Routing.
+### Routing
 `sudo nano route -n`
 
 <p align="center">
      <img src="images/relay_routing.png">
    </p>     
 
-Then the DHCP relay has to be started.
+### Then the DHCP relay has to be started
 `sudo systemctl start isc-dhcp-relay`
 
 If the command prompt returns without a message, then it worked.
 
+### DHCP relay status
 If the start of the ISC DHCP relay was aborted with an error, then you should perform a status query to get to the bottom of the error.
 `sudo systemctl status isc-dhcp-relay`
-
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
