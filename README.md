@@ -28,26 +28,27 @@
 
 **Setup ISC DHCP server**
 First we install the DHCP server.
-```sh
-sudo apt-get install isc-dhcp-server
-```
+
+# Installing the DHCP server
+`sudo apt-get install isc-dhcp-server`
 
 <!-- DHCP configuration -->
 ### Part-II
 
+# Configuring the DHCP server
 First we have to define for which network interface the ISC DHCP server should work. To do this, we open the following configuration file.
-```sh
-sudo nano /etc/default/isc-dhcp-server
-```
+
+`sudo nano /etc/default/isc-dhcp-server`
+
 Here we add the interface name in the line provided. Here we choose “eth1”. Depending on the application, it can also be “wlan0”.
 ```sh
 INTERFACESv4="eth1"
 INTERFACESv6=""
 ```
 It continues with the configuration. Before we save the default configuration file and create a new one.
-```sh
-sudo nano /etc/dhcp/dhcpd.conf
-```
+
+`sudo nano /etc/dhcp/dhcpd.conf`
+
 Then the editor opens with an empty file, in which we enter the following configuration.
 ```sh
 authoritative;
@@ -68,10 +69,8 @@ subnet 192.168.2.0 netmask 255.255.255.0
         interface eth0;
 }
 ```
-
-```sh
-sudo nano /etc/network/interfaces
-```
+# Interfaces
+`sudo nano /etc/network/interfaces`
 
 ```sh
 auto lo
