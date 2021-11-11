@@ -25,6 +25,11 @@
 
 
 # Part-I
+## Network architecture
+
+<p align="center">
+     <img src="images/Network-arch.png">
+   </p>
 
 **Setup ISC DHCP server**
 First we install the DHCP server.
@@ -118,6 +123,10 @@ If the start of the ISC DHCP server was aborted with an error, then you should p
 
 `sudo systemctl status isc-dhcp-server`
 
+<p align="center">
+     <img src="images/status-DHCP.png">
+   </p>
+   
 In case of error, the messages are unfortunately not always clear. Unless you have made a configuration error. Very popular are typos or missing semicolons (“;”) at the end of a directive.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -206,6 +215,10 @@ If the command prompt returns without a message, then it worked.
 If the start of the ISC DHCP relay was aborted with an error, then you should perform a status query to get to the bottom of the error.
 
 `sudo systemctl status isc-dhcp-relay`
+
+<p align="center">
+     <img src="images/status-RELAY.png">
+   </p>
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
