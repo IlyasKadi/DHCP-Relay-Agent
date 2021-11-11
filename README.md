@@ -24,18 +24,18 @@
 
 
 
-### Part-I
+# Part-I
 
 **Setup ISC DHCP server**
 First we install the DHCP server.
 
-# Installing the DHCP server
+## Installing the DHCP server
 `sudo apt-get install isc-dhcp-server`
 
 <!-- DHCP configuration -->
-### Part-II
+# Part-II
 
-# Configuring the DHCP server
+## Configuring the DHCP server
 First we have to define for which network interface the ISC DHCP server should work. To do this, we open the following configuration file.
 
 `sudo nano /etc/default/isc-dhcp-server`
@@ -69,7 +69,7 @@ subnet 192.168.2.0 netmask 255.255.255.0
         interface eth0;
 }
 ```
-# Interfaces
+## Interfaces
 `sudo nano /etc/network/interfaces`
 
 ```sh
@@ -89,48 +89,42 @@ iface eth1 inet static
         gateway 192.168.1.1
 ```
 firewall_disabled.
-```sh
-sudo nano /etc/selinux/config
-```
+`sudo nano /etc/selinux/config`
+
 <p align="center">
      <img src="images/firewall_disabled.png">
    </p>
    
  Routing.
-```sh
-sudo nano route -n
-```
+`sudo nano route -n`
+
 <p align="center">
      <img src="images/routing_dhcp.png">
    </p>  
 
 Then the DHCP server has to be started.
-```sh
-sudo systemctl start isc-dhcp-server
-```
+`sudo systemctl start isc-dhcp-server`
+
 If the command prompt returns without a message, then it worked.
 
 If the start of the ISC DHCP server was aborted with an error, then you should perform a status query to get to the bottom of the error.
-```sh
-sudo systemctl status isc-dhcp-server
-```
+`sudo systemctl status isc-dhcp-server`
+
 In case of error, the messages are unfortunately not always clear. Unless you have made a configuration error. Very popular are typos or missing semicolons (“;”) at the end of a directive.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- Relay agent configuration -->
-### Part-III
+# Part-III
 
 **Setup ISC DHCP RELAY**
 First we install the DHCP relay agent.
-```sh
-apt install isc-dhcp-relay
-```
+`apt install isc-dhcp-relay`
+
 First we have to define for which network interface the ISC DHCP server should work. To do this, we open the following configuration file.
-```sh
-sudo nano /etc/default/isc-dhcp-relay
-```
+`sudo nano /etc/default/isc-dhcp-relay`
+
 Here we add the ADDRESS of dhcp and interfaces names.
 ```sh
 # What servers should the DHCP relay forward requests to?
@@ -143,9 +137,8 @@ INTERFACES="eth0 eth1"
 OPTIONS=""
 ```
 
-```sh
-sudo nano /etc/network/interfaces
-```
+`sudo nano /etc/network/interfaces`
+
 
 ```sh
 auto lo
@@ -168,31 +161,26 @@ iface eth0 inet static
 ```
 
 firewall_disabled.
-```sh
-sudo nano /etc/selinux/config
-```
+`sudo nano /etc/selinux/config`
+
 <p align="center">
      <img src="images/firewall_disabled.png">
    </p>
    
 Routing.
-```sh
-sudo nano route -n
-```
+`sudo nano route -n`
+
 <p align="center">
      <img src="images/relay_routing.png">
    </p>     
 
 Then the DHCP relay has to be started.
-```sh
-sudo systemctl start isc-dhcp-relay
-```
+`sudo systemctl start isc-dhcp-relay`
+
 If the command prompt returns without a message, then it worked.
 
 If the start of the ISC DHCP relay was aborted with an error, then you should perform a status query to get to the bottom of the error.
-```sh
-sudo systemctl status isc-dhcp-relay
-```
+`sudo systemctl status isc-dhcp-relay`
 
 
 
@@ -200,7 +188,7 @@ sudo systemctl status isc-dhcp-relay
 
 
 <!-- Demonstration -->
-### Part-IV
+# Part-IV
 
 - Demonstrate the DHCP operating with a client and a server in the same
 network.
