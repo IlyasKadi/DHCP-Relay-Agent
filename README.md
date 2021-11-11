@@ -244,7 +244,7 @@ Client2      | RELAY_config         | Routing      |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-Our Team - [AIT EL KADI Ilyas](https://github.com/IlyasKadi) - [AZIZ Oussama](https://github.com/ATAMAN0) - [DARBAL nour-elhouda](https://) -[MZOUDI Khaoula](https://)
+Our Team - [AIT EL KADI Ilyas](https://github.com/IlyasKadi) - [AZIZ Oussama](https://github.com/ATAMAN0) - [DARBAL nour-elhouda](https://github.com/teamkhaoulanour) -[MZOUDI Khaoula](https://github.com/teamkhaoulanour)
 
 Project Link: [DHCP-Relay-Agent](https://github.com/IlyasKadi/DHCP-Relay-Agent)
 
