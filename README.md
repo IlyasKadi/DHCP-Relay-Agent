@@ -107,7 +107,9 @@ iface eth1 inet static
 If the command prompt returns without a message, then it worked.
 
 ### Server status
+
 If the start of the ISC DHCP server was aborted with an error, then you should perform a status query to get to the bottom of the error.
+
 `sudo systemctl status isc-dhcp-server`
 
 In case of error, the messages are unfortunately not always clear. Unless you have made a configuration error. Very popular are typos or missing semicolons (“;”) at the end of a directive.
@@ -188,7 +190,9 @@ net.ipv4.ip_forward=1
 If the command prompt returns without a message, then it worked.
 
 ### DHCP relay status
+
 If the start of the ISC DHCP relay was aborted with an error, then you should perform a status query to get to the bottom of the error.
+
 `sudo systemctl status isc-dhcp-relay`
 
 
