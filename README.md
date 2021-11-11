@@ -244,10 +244,10 @@ Client2      | RELAY_config         | Routing      |
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-Our Team - [AIT EL KADI Ilyas](https://github.com/IlyasKadi) - [AZIZ Oussama](https://github.com/ATAMAN0) - [DARBAL nour-elhouda](https://github.com/teamkhaoulanour) -[MZOUDI Khaoula](https://github.com/teamkhaoulanour)
+Our Team - [AIT EL KADI Ilyas](https://github.com/IlyasKadi) - [AZIZ Oussama](https://github.com/ATAMAN0) - [DARBAL nour-elhouda](https://github.com/teamkhaoulanour) -[MZOUDI Khaoula](https://github.com/KhaoulaMzoudi)
 
 Project Link: [DHCP-Relay-Agent](https://github.com/IlyasKadi/DHCP-Relay-Agent)
 
-Encadré par : [Mme.TADIST Khawla](https://github.com/KhaoulaMzoudi)
+Encadré par : [Mme.TADIST Khawla](https://)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
