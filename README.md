@@ -15,6 +15,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
+        <li><a href="#Network architecture">Part I</a></li>
         <li><a href="#Part-I">Part I</a></li>
         <li><a href="#Part-II">Part II : DHCP configuration</a></li>
         <li><a href="#Part-III">Part III : Relay agent configuration</a></li>
@@ -22,14 +23,13 @@
   </ol>
 </details>
 
-
-
-# Part-I
-## Network architecture
+# Network architecture
 
 <p align="center">
      <img src="images/Network-arch.png">
    </p>
+
+# Part-I
 
 **Setup ISC DHCP server**
 First we install the DHCP server.
