@@ -248,6 +248,6 @@ Our Team - [AIT EL KADI Ilyas](https://github.com/IlyasKadi) - [AZIZ Oussama](ht
 
 Project Link: [DHCP-Relay-Agent](https://github.com/IlyasKadi/DHCP-Relay-Agent)
 
-Encadré par : [Mme.TADIST Khawla](https://)
+Encadré par : [Mme.TADIST Khawla](https://github.com/KhaoulaMzoudi)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
