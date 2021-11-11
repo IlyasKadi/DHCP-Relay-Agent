@@ -40,7 +40,7 @@ First we install the DHCP server.
 <!-- DHCP configuration -->
 # Part-II
 
-### Network architecture
+### Network architecture DHCP
 
 <p align="center">
      <img src="images/DHCP-arch.png">
@@ -135,7 +135,7 @@ In case of error, the messages are unfortunately not always clear. Unless you ha
 <!-- Relay agent configuration -->
 # Part-III
 
-### Network architecture
+### Network architecture RELAY-AGENT
 
 <p align="center">
      <img src="images/RELAY_agent-arch.png">
